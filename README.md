@@ -15,9 +15,9 @@ Dataset struct must be the following format.
     - OTHER
     - SHARK
     - YFT
-  - eval (with same struct as train)
+  - val (with same struct as train)
 
-The eval dataset is the first 10% data in each label, and other 90% is for training.
+The val dataset is the first 10% data in each label, and other 90% is for train.
 
 ## Train
 
