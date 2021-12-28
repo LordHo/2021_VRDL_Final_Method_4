@@ -4,7 +4,7 @@
 
 Dataset struct must be the following format.
 
-- root
+- data
   - train
     - ALB
       - sample.jpg
