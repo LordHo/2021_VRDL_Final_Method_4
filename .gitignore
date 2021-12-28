@@ -1,0 +1,7 @@
+data
+*.jpg
+step1_classification/model
+step1_classification/result
+step2_object_detection
+*.pyc
+*.txt
