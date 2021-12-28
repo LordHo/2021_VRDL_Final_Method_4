@@ -208,8 +208,8 @@ def eval_model(model_list, dataloader, result_path, device):
 
         # eval the image
         # outputs = model(inputs)
-        # outputs = ensemble(inputs, model_list)
-        outputs = aug_ensemble(inputs, model_list, device)
+        outputs = ensemble(inputs, model_list)
+        # outputs = aug_ensemble(inputs, model_list, device)
         outputs = torch.softmax(outputs, 1)
         # print(outputs)
         # Take the hightest class number as eval result
@@ -238,7 +238,7 @@ def eval_model(model_list, dataloader, result_path, device):
     result.close()
 
 
-def eval():
+def eval(stage=1):
     """ Load trained model
         Change the model name and timestamp to the model you want to eval.
     """
@@ -255,8 +255,12 @@ def eval():
 
     # Create evaluation dataset
     # eval_image_order_path = os.path.join('..', 'data', 'testing_img_order.txt')
-    eval_image_dir = os.path.join('..', '..', 'data', 'test_stg1')
-    # eval_image_dir = os.path.join('..', '..', 'data', 'test_stg2')
+    if stage == 1:
+        eval_image_dir = os.path.join('..', '..', 'data', 'test_stg1')
+    elif stage == 2:
+        eval_image_dir = os.path.join('..', '..', 'data', 'test_stg2')
+    else:
+        raise "Stage Error!"
     eval_dataset = EvalDataset(
         eval_image_dir, input_size=input_size)
 
@@ -297,7 +301,10 @@ def eval():
     create_dir(result_dir)
 
     # the path of the evaluation result stored
+    # result_path = os.path.join(
+    # result_dir, f'eval_{model_name}_{timestamp}.txt')
+
     result_path = os.path.join(
-        result_dir, f'eval_{model_name}_{timestamp}.txt')
+        result_dir, f'eval_{model_name}_{timestamp}.csv')
 
     eval_model(model_list, eval_dataloader, result_path, device)
