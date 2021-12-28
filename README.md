@@ -16,6 +16,10 @@ Dataset struct must be the following format.
     - SHARK
     - YFT
   - val (with same struct as train)
+  - test_stg1
+    - sample.jpg
+  - test_stg2
+    - sample.jpg
 
 The val dataset is the first 10% data in each label, and other 90% is for train.
 
