@@ -8,6 +8,8 @@ Pytorch
 
 ### Installation
 
+Download the whole project and install by following step.
+
 ```cmd
 pip install -r requirement.txt
 ```
@@ -17,23 +19,26 @@ pip install -r requirement.txt
 Dataset struct must be the following format.
 
 - data
-  - train
-    - ALB
-      - sample.jpg
-    - BET
-    - DOL
-    - LAG
-    - NoF
-    - OTHER
-    - SHARK
-    - YFT
-  - val (with same struct as train)
+  - 8_class
+    - train
+      - ALB
+        - sample.jpg
+      - BET
+      - DOL
+      - LAG
+      - NoF
+      - OTHER
+      - SHARK
+      - YFT
+    - val (with same struct as train)
   - test_stg1
     - sample.jpg
   - test_stg2
     - sample.jpg
 
-The val dataset is the first 10% data in each label, and other 90% is for train.
+The val dataset is the first 10% data in each label, and other 90% is for train.  
+You can download the whole same dataset by link.  
+[dataset](https://drive.google.com/drive/folders/1wRcGU_abgKE5etkTI2OHfCvELABF9AC4?usp=sharing)
 
 ## Train
 
