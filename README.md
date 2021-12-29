@@ -61,7 +61,9 @@ eval(stage=1)
 ```
 
 If stage is 1(2), it'll ouput stage 1(2) image result as csv.  
-You should eval stage 1 or 2 for both and concate stage 2 result following stage 1 result for update to kaggle.
+!!!!  
+You should eval stage 1 or 2 and get two csv, then concate stage 2 result following stage 1 result for update to kaggle.  
+!!!!  
 
 ## Result
 
