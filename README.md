@@ -35,6 +35,8 @@ Dataset struct must be the following format.
     - sample.jpg
   - test_stg2
     - sample.jpg
+- step1_classification
+  - src
 
 The val dataset is the first 10% data in each label, and other 90% is for train.  
 You can download the whole same dataset by link.  
