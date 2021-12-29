@@ -61,9 +61,10 @@ eval(stage=1)
 ```
 
 If stage is 1(or 2), it'll ouput stage 1(or 2) image result as csv.  
-!!!!  
-You should eval stage 1 and 2 to get two csv, then concate stage 2 result following stage 1 result for update to kaggle.  
-!!!!  
+!!!!  You should eval stage 1 and 2 to get two csv, then concate stage 2 result following stage 1 result for update to kaggle.  !!!!  
+The merge can use   `.\step1_classification\src\merge_stage.ipynb`. Excute all cells.  
+Be carefully fill the `stage1_csv_path`, `stage2_csv_path` and `merge_stage_csv_path` in  `.\step1_classification\src\merge_stage.ipynb`.  
+The extra constant is default as 0.01, can modify as you wish.
 
 ## Result
 
