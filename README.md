@@ -44,7 +44,7 @@ You can download the whole same dataset by link.
 
 ## Train
 
-Excute the cell in main.ipynb like the following cell.
+Excute the cell in `.\step1_classification\src\main.ipynb` like the following cell.
 
 ```python
 from train import train
@@ -53,16 +53,16 @@ train()
 
 ## Eval
 
-Excute the cell in main.ipynb like the following cell.
+Excute the cell in `.\step1_classification\src\main.ipynb` like the following cell.
 
 ```python
 from eval import eval
 eval(stage=1)
 ```
 
-If stage is 1(2), it'll ouput stage 1(2) image result as csv.  
+If stage is 1(or 2), it'll ouput stage 1(or 2) image result as csv.  
 !!!!  
-You should eval stage 1 or 2 and get two csv, then concate stage 2 result following stage 1 result for update to kaggle.  
+You should eval stage 1 and 2 to get two csv, then concate stage 2 result following stage 1 result for update to kaggle.  
 !!!!  
 
 ## Result
