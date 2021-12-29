@@ -1,5 +1,17 @@
 # VRDL Final Project Swin Transformer with 8 classes
 
+## Environment
+
+### Framework
+
+Pytorch
+
+### Installation
+
+```cmd
+pip install -r requirement.txt
+```
+
 ## Dataset
 
 Dataset struct must be the following format.
