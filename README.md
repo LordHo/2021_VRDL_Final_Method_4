@@ -66,6 +66,9 @@ The merge can use   `.\step1_classification\src\merge_stage.ipynb`. Excute all c
 Be carefully fill the `stage1_csv_path`, `stage2_csv_path` and `merge_stage_csv_path` in  `.\step1_classification\src\merge_stage.ipynb`.  
 The extra constant is default as 0.01, can modify as you wish.
 
+[Merge sample](https://drive.google.com/file/d/1vgZPxopLcZRF9xqkFKvuxwgiMG6qBc2h/view?usp=sharing)  
+[Add constant sample](https://drive.google.com/file/d/1FFL5rM5sCNg0BRGqzzXomfFgMLGJ5qm4/view?usp=sharing)  
+
 ## Result
 
 | Model            | Private | Public  |
